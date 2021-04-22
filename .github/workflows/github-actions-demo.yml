@@ -14,5 +14,14 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: Change directory
+        run: |
+          cd ${{ github.workspace }}
+      - name: Install node monules
+        run: |
+          npm install
+      - name: run test
+        run: |
+          npm run test
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
