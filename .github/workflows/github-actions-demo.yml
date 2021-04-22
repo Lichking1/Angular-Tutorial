@@ -23,5 +23,12 @@ jobs:
       - name: Run lint
         run: |
           npm run lint
+
+      - name: Run test
+        run: |
+          npm run test
+      - name: Run e2e
+        run: |
+          npm run e2e
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
